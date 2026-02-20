@@ -1,58 +1,63 @@
-# Minimal Dark
+# 🌙 Minimal Dark
 
-A refined, minimal dark theme for Visual Studio Code, inspired by the **Minimal Blur** aesthetic from Zed. Designed for focus and clarity.
+A refined, minimal dark theme for **Visual Studio Code**, inspired by the sleek **Minimal Blur** aesthetic from Zed. Designed for maximum focus, clarity, and a premium coding experience.
+
+---
 
 ## 🎨 Palette
 
-- **Background**: Deep Charcoal (`#141414`)
-- **Text**: Balanced Gray (`#BFBFBF`)
-- **Accents**: Muted Gold (`#CCB333`)
-- **Success**: Soft Green (`#73B82E`)
+| Element | Color | Hex |
+| :--- | :--- | :--- |
+| **Background** | Deep Charcoal | `#141414` |
+| **Text** | Balanced Gray | `#BFBFBF` |
+| **Accents** | Muted Gold | `#CCB333` |
+| **Success** | Soft Green | `#73B82E` |
+
+## ✨ Features
+
+- **Minimalist Design**: No distractions, just your code.
+- **Eye-Care**: Balanced contrast ratio to reduce eye strain during long sessions.
+- **Accented Clarity**: Subtle gold accents for important UI elements.
+- **Zed-Inspired**: Brings the modern Zed editor feel to VS Code.
 
 ## 🚀 Installation
 
-### Download from GitHub
+### 📦 Marketplace / VSIX (Recommended)
 
-You can download the latest compiled extension (`.vsix`) from the **[Releases]([https://github.com/teenageswag/Visual-Studio-Config/releases](https://github.com/teenageswag/Visual-Studio-Config/releases/))** section.
-After downloading:
+1. Download the latest `.vsix` from the **[Releases](https://github.com/teenageswag/vscode-theme/releases)** section.
+2. Open VS Code.
+3. Access **Extensions** (`Ctrl+Shift+X`).
+4. Click the `...` menu (top right) → **Install from VSIX...**.
+5. Select the downloaded file.
 
-1. Open VS Code.
-2. Go to the **Extensions** view (`Ctrl+Shift+X`).
-3. Click on the `...` (Views and More Actions) at the top right.
-4. Select **Install from VSIX...** and choose the downloaded file.
+### 🛠️ Manual Installation
 
-### Manual Installation
-
-1. Copy the `Visual-Studio-Theme` folder to your VS Code extensions directory:
-        - **Windows**: `%USERPROFILE%\.vscode\extensions`
-        - **macOS/Linux**: `~/.vscode/extensions`
+1. Copy the project folder to your extensions directory:
+   - **Windows**: `%USERPROFILE%\.vscode\extensions`
+   - **macOS/Linux**: `~/.vscode/extensions`
 2. Restart VS Code.
 3. Press `Ctrl+K Ctrl+T` and select **Minimal Dark**.
 
-## 🛠️ Build and Development
+## 🛠️ Development
 
-To build the project into a `.vsix` package:
+If you want to customize or contribute:
 
-1. Install `vsce` (Visual Studio Code Extension Manager):
-
-   ```bash
-   npm install -g @vscode/vsce
-   ```
-
-2. Run the packaging command:
+1. **Clone & Open**:
 
    ```bash
-   vsce package
+   git clone https://github.com/teenageswag/vscode-theme.git
+   code vscode-theme
    ```
 
-   This will generate a `.vsix` file in the root directory.
+2. **Test Changes**:
+   Press `F5` to launch a new VS Code window with the theme applied.
 
-If you want to modify the theme:
+3. **Build Package**:
 
-1. Clone this repository.
-2. Open the folder in VS Code.
-3. Edit `themes/MinimalDark.json`.
-4. Press `F5` to open a new window with your changes applied for testing.
+   ```bash
+   npm run package
+   ```
 
 ---
-Created with ❤️ by [j2cks](https://github.com/teenageswag)
+
+Developed with ❤️ by **[j2cks](https://github.com/teenageswag)**

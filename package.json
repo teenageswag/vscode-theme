@@ -2,13 +2,21 @@
   "name": "minimal-dark-theme",
   "displayName": "Minimal Dark",
   "description": "A refined, minimal dark theme inspired by Zed's Minimal Blur aesthetics.",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "publisher": "j2cks",
   "author": {
     "name": "j2cks",
     "url": "https://github.com/teenageswag"
   },
   "license": "MIT",
+  "homepage": "https://github.com/teenageswag/vscode-theme/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teenageswag/vscode-theme/"
+  },
+  "bugs": {
+    "url": "https://github.com/teenageswag/vscode-theme/issues"
+  },
   "engines": {
     "vscode": "^1.75.0"
   },
@@ -18,15 +26,12 @@
   "keywords": [
     "minimal",
     "dark",
-    "zed",
+    "zed-inspired",
     "blur",
-    "gray",
-    "gold"
+    "grayscale",
+    "gold-accents",
+    "focus"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/teenageswag/Visual-Studio-Config/tree/master/Visual-Studio-Theme"
-  },
   "contributes": {
     "themes": [
       {
@@ -35,5 +40,9 @@
         "path": "./themes/MinimalDark.json"
       }
     ]
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
   }
 }
